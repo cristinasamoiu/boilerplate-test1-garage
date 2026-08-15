@@ -3,13 +3,12 @@
 ## Overview
 This task focuses on improving the **UX/UI design** of the Login Page and Team Page.
 
-The goal is to create a clean, modern, professional, and responsive interface while keeping the existing functionality unchanged.
+The goal is to create a clean, modern, professional interface while keeping the existing functionality unchanged.
 
 ## Scope
 - Front-end styling and presentation only
 - HTML/CSS changes only
 - Improve layout, spacing, typography, colours, forms, buttons, and cards
-- Add responsive behaviour
 - Add clear hover and focus states
 - Maintain basic accessibility
 
@@ -21,47 +20,50 @@ The Login Page should:
 - Use clear labels and readable input fields
 - Have a clear visual hierarchy
 - Make the main sign-in button easy to identify
-- Keep existing Google Sign-In and account creation options
-- Work well across desktop and mobile devices
 
 ## Team Page
-The Team Page should:
-- Clearly introduce all team members
-- Show each member's name, role, and short responsibility description
-- Use a clean and responsive card layout
-- Use consistent spacing, typography, and card styling
-- Make different team roles easy to identify
-- Adapt properly to different screen sizes
+Each team member must display:
+- **Name**
+- **Profile picture/avatar**
+- **Role**
+- **Short blurb** describing their responsibilities or contribution
+
+The Team Page should use a clean and consistent card-based layout with readable typography and clear spacing between elements.
+
+## Team Page Edge Cases
+The requirements and mock-up must show how the design handles these edge cases:
+
+### Missing Profile Photo
+- If a profile photo is unavailable, display a consistent fallback avatar or the team member's initials.
+- The missing image must not break the card layout or leave an empty image area.
+
+### Long Blurb / Text Overflow
+- Long blurbs must wrap within the team member card.
+- Text must not overflow outside the card or overlap other elements.
+- Card spacing and readability should remain consistent when descriptions have different lengths.
 
 ## Design Guidelines
-- Modern and professional
-- Minimal and easy to navigate
-- Consistent styling across both pages
-- Clean typography
-- Consistent colours, spacing, borders, and shadows
-- Subtle hover and focus effects
-- Good readability and contrast
-
-## Responsive Design
-Both pages should support:
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
-The layout should adapt naturally without horizontal scrolling.
+- Modern, minimal, and professional
+- Consistent styling across the Login Page and Team Page
+- Clean and readable typography
+- Consistent colours, spacing, borders, and card styles
+- Clear visual hierarchy
+- Subtle hover and focus effects where appropriate
 
 ## Deliverables
-Create mock-up designs for:
-- Login Page – Desktop
-- Login Page – Mobile
-- Team Page – Desktop
-- Team Page – Mobile
+Create mock-ups for:
+- Login Page
+- Team Page
+- Team Page edge cases:
+  - Missing profile photo
+  - Long blurb / text overflow
 
 ## Acceptance Criteria
 - Both pages look professional and consistent
 - Login flow is clear and easy to understand
-- Team members and roles are clearly presented
-- Layout is responsive and readable
+- Each team profile includes **name, profile picture/avatar, role, and blurb**
+- Missing profile photos have a clear fallback state
+- Long blurbs remain contained and readable without text overflow
+- Team member cards remain visually consistent across the documented edge cases
 - Existing functionality remains unchanged
 - No backend logic is modified
