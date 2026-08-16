@@ -57,7 +57,7 @@ export default function SignInPage() {
       <h1 className="text-2xl font-bold tracking-tight text-slate-900">
         Sign in
       </h1>
-      <p className="mt-1.5 text-[0.9375rem] text-slate-500">
+      <p className="mt-1.5 text-[0.9375rem] text-black">
         Enter your credentials to continue
       </p>
 
