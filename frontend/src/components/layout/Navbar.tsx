@@ -16,16 +16,23 @@ export function Navbar() {
   }
 
   return (
-    <header className="flex h-14 items-center justify-between border-b border-zinc-200 bg-white px-4 dark:border-zinc-800 dark:bg-zinc-900">
-      <div className="text-sm font-semibold lg:hidden">
-        {process.env.NEXT_PUBLIC_APP_NAME ?? 'App'}
+    <header className="flex h-16 items-center justify-between border-b border-slate-800 bg-slate-900 px-6 text-white">
+      <div className="flex flex-col">
+        <span className="text-[1.05rem] font-semibold tracking-tight">
+          Telstra Health — UX Research Companion — Team 2
+        </span>
+        <span className="text-sm text-slate-400">Capstone Project</span>
       </div>
-      <div className="flex-1" />
+
       <div className="flex items-center gap-3">
-        {user && <span className="hidden text-sm text-zinc-500 sm:block">{user.email}</span>}
+        {user && (
+          <span className="hidden text-sm text-slate-300 sm:block">
+            {user.email}
+          </span>
+        )}
         <Link
           href="/profile"
-          className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-100 text-zinc-600 transition-colors hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700"
+          className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-800 text-slate-300 transition-colors hover:bg-slate-700"
           aria-label="Profile"
         >
           <User className="h-4 w-4" />
@@ -33,7 +40,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={handleSignOut}
-          className="flex h-8 w-8 items-center justify-center rounded-full text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-300"
+          className="flex h-8 w-8 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-200"
           aria-label="Sign out"
         >
           <LogOut className="h-4 w-4" />
